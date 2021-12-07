@@ -1,4 +1,4 @@
-function compute()
+function compute() //Responsible for computing the main task
 {
     var principal = document.getElementById("principal").value;
     if (principal <= 0) {
@@ -12,7 +12,8 @@ function compute()
     document.getElementById("result").innerHTML="<b>If</b> you deposit <mark>"+principal+"</mark>,<br> <b>at</b> an interest rate of <mark>"+rate+"%</mark>,<br><b>you</b> will receive an amount of <mark>"+amount+"</mark><br><b>in</b> the <mark>"+year+"</mark>.";
 }
 
-function updateRate() {
+function updateRate() //Makes sliding bar readable
+{
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval+"%";
 }
