@@ -1,8 +1,9 @@
 function compute() //Responsible for computing the main task
 {
     var principal = document.getElementById("principal").value;
-    if (principal <= 0) {
+    if (principal <= 0 || principal == '') {
         alert("Enter a positive number!");
+        document.getElementById("principal").focus();
         return;
     }
     var rate = document.getElementById("rate").value;
